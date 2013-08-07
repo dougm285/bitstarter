@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -97,7 +97,31 @@ p {
 .footer a {
   color: #ccccff;
 }
-      </style>
+      
+
+
+ /*http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }
+
+    </style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43004614-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 
@@ -172,8 +196,17 @@ p {
   </div>
   <div class="span8 offset2 social">
 
-     <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-     <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201d7da6f08cd0a"></script>
+<!-- AddThis Button END -->
+
     </div>
   </div>
 </div> 
@@ -197,7 +230,8 @@ p {
 	Hero Fitness starts with a test to determine your fitness level and assigns you personlized stats. A workout plan is then generated based on the areas you wish to improve. You are assigned a class and a level based on your stats. As you improve your times, reps and use heavier weights in workouts, your stats will increase granting you additional levels. The app also tracks the number of reps you do of each excerise and grants you achievements as you reach benchmarks. It is inspiring way to motivate men, women, and children of any age to take control of their life.    
       </p>
     </div>
-  <div class="span5 asset">
+  
+<div class="span5 asset">
     <img class="img-polaroid" src="http://fs01.androidpit.info/afg/x45/7431145-1364261412499.jpg">
   </div>
 </div>
@@ -244,5 +278,18 @@ p {
     </div>
   </div>
 </div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43004614-1', 'herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
